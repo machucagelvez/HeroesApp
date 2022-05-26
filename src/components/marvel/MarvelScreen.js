@@ -1,5 +1,6 @@
 import { HeroList } from '../hero/HeroList'
 
+// Muestra todos los heroes de Marvel
 export const MarvelScreen = () => {
   return (
     <div>

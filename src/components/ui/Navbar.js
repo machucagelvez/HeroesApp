@@ -1,5 +1,6 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 
+// Barra de navegación de la App
 export const Navbar = () => {
   const navigate = useNavigate()
   const handleLogout = () => {
@@ -20,6 +21,9 @@ export const Navbar = () => {
 
           <NavLink className="nav-item nav-link" to="/dc">
             DC
+          </NavLink>
+          <NavLink className="nav-item nav-link" to="/search">
+            Search
           </NavLink>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { HeroList } from '../hero/HeroList'
 
+// Muestra todos los heroes de DC
 export const DcScreen = () => {
   return (
     <div>

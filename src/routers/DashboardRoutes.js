@@ -5,6 +5,7 @@ import { MarvelScreen } from '../components/marvel/MarvelScreen'
 import { SearchScreen } from '../components/search/SearchScreen'
 import { HeroScreen } from '../components/hero/HeroScreen'
 
+// Enrutamiento para las demás vistas de la App, no debe tener el <BrowserRouter>
 export const DashboardRoutes = () => {
   return (
     <>
@@ -14,7 +15,7 @@ export const DashboardRoutes = () => {
           <Route path="/marvel" element={<MarvelScreen />} />
           <Route path="/dc" element={<DcScreen />} />
           <Route path="/search" element={<SearchScreen />} />
-          <Route path="/hero" element={<HeroScreen />} />
+          <Route path="/hero/:heroId" element={<HeroScreen />} />
           <Route path="/" element={<MarvelScreen />} />
         </Routes>
       </div>
