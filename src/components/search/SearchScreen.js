@@ -9,7 +9,7 @@ import { useMemo } from 'react'
 export const SearchScreen = () => {
   const navigate = useNavigate()
   const location = useLocation() //Trae de la url la ruta y los params
-  const { q = '' } = queryString.parse(location.search) // Separa cada uno de los params que recibe en eun string y los entrega en un objeto
+  const { q = '' } = queryString.parse(location.search) // Separa cada uno de los params que recibe en un string y los entrega en un objeto
 
   //El initialValue es lo que digita el usuario para que no se borre si se recarga la página:
   const [formValues, handleInputChange] = useForm({ searchText: q })
